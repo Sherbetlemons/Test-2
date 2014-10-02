@@ -13,7 +13,7 @@ maintain or invert existing value (light to dark) scale.
 
 // Color palette //
 @road:  #fff;
-@land:  #eee;
+@land:  #7aac5a;
 
 @fill1: #fff;
 @fill2: #bbb;
