@@ -207,11 +207,11 @@
 <Style name="building" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#9bb48b" />
+    <PolygonSymbolizer fill="#aeaeae" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <PolygonSymbolizer fill="#8ab072" />
+    <PolygonSymbolizer fill="#bbbbbb" />
   </Rule>
 </Style>
 <Layer name="building"

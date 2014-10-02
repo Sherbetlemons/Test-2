@@ -69,8 +69,8 @@ Map { background-color: @land; }
 }
 
 #building { 
-  polygon-fill: mix(@fill2,@land,25);
-  [zoom>=16]{ polygon-fill: mix(@fill2,@land,50);}
+  polygon-fill: @fill2;
+  [zoom>=16]{ polygon-fill: darken(@fill2,5);}
 }
 
 #aeroway {
