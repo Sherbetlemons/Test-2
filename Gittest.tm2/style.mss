@@ -13,7 +13,7 @@ maintain or invert existing value (light to dark) scale.
 
 // Color palette //
 @road:  #fff;
-@land:  #eee;
+@land:  #7aac5a;
 
 @fill1: #fff;
 @fill2: #bbb;
@@ -51,10 +51,14 @@ Map { background-color: @land; }
 // Land Features //
 #landuse[class='cemetery'],
 #landuse[class='park'],
-#landuse[class='wood'],
 #landuse_overlay {
   polygon-fill: darken(@land,3);
   [zoom>=15] { polygon-fill:mix(@land,@fill4,95); }
+}
+
+#landuse[class='wood'] {
+  polygon-fill: darken(@land,5);
+  [zoom>=15] { polygon-fill:mix(@land,@fill4,105); }
 }
 
 #landuse[class='pitch'],
@@ -69,8 +73,8 @@ Map { background-color: @land; }
 }
 
 #building { 
-  polygon-fill: mix(@fill2,@land,25);
-  [zoom>=16]{ polygon-fill: mix(@fill2,@land,50);}
+  polygon-fill: @fill2;
+  [zoom>=16]{ polygon-pattern-file: url('img\patterns\LineAngle3.png')}
 }
 
 #aeroway {
