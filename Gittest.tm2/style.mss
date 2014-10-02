@@ -51,10 +51,14 @@ Map { background-color: @land; }
 // Land Features //
 #landuse[class='cemetery'],
 #landuse[class='park'],
-#landuse[class='wood'],
 #landuse_overlay {
   polygon-fill: darken(@land,3);
   [zoom>=15] { polygon-fill:mix(@land,@fill4,95); }
+}
+
+#landuse[class='wood'] {
+  polygon-fill: darken(@land,5);
+  [zoom>=15] { polygon-fill:mix(@land,@fill4,105); }
 }
 
 #landuse[class='pitch'],
@@ -70,7 +74,7 @@ Map { background-color: @land; }
 
 #building { 
   polygon-fill: @fill2;
-  [zoom>=16]{ polygon-fill: darken(@fill2,5);}
+  [zoom>=16]{ polygon-pattern-file: url('img\patterns\LineAngle3.png')}
 }
 
 #aeroway {

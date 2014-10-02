@@ -19,12 +19,12 @@
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#74a356" />
+    <PolygonSymbolizer fill="#80b55f" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#72a453" />
+    <PolygonSymbolizer fill="#6e9d4f" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -207,7 +207,8 @@
 <Style name="building" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#aeaeae" />
+    <PolygonSymbolizer fill="#bbbbbb" />
+    <PolygonPatternSymbolizer file="img\patterns\LineAngle3.png" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
